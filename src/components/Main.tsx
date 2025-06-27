@@ -17,7 +17,7 @@ function Main() {
             <a href="https://www.linkedin.com/in/vosaba/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
           <h1>Leonid Abasov</h1>
-          <p>Senior Software Engineer | Technical Leader</p>
+          <p>Principal Software Engineer | Technical Leader</p>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/vosaba" target="_blank" rel="noreferrer"><GitHubIcon/></a>

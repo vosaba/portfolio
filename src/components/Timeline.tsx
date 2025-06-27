@@ -8,7 +8,17 @@ import '../assets/styles/Timeline.scss';
 
 const timelineData = [
     {
-        date: 'Jan 2023 - Present',
+        date: 'Mar 2025 - Present',
+        company: 'Prometheus Group',
+        location: 'Raleigh, NC',
+        link: 'https://www.prometheusgroup.com/',
+        title: 'Principal Software Engineer',
+        description:
+            'As a Principal Software Engineer at Prometheus Group, I elevated software quality and system reliability by introducing a comprehensive integration testing strategy and establishing automated performance threshold monitoring, leading to a significant reduction in production incidents and faster mean time to resolution (MTTR). I engineered a highly configurable, modular microservice architecture, creating a reusable framework that increased development velocity for new feature deployment and standardized service creation across the engineering organization.',
+        icon: faBriefcase,
+    },
+    {
+        date: 'Jan 2023 - Mar 2025',
         company: 'PSD Consulting',
         location: 'New York, NY',
         link: 'https://psdconsulting.com/',
