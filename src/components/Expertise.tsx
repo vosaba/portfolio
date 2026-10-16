@@ -66,7 +66,7 @@ const expertiseData = [
     {
         icon: faChalkboardUser,
         title: "Technical Leadership",
-        description: "I lead through architecture specs, code review and teaching: 290+ specs and 17 epics delivered by other engineers, 2,300+ merge requests reviewed, bootcamps that get new grads shipping within weeks, and mentoring that grows engineers into senior roles.",
+        description: "I lead through architecture specs, code review and teaching. In 18 months at Prometheus Group alone: 290+ specs and 17 epics delivered by other engineers and 2,300+ merge requests reviewed. Across my career: bootcamps that get new grads shipping within weeks, 500+ professionals trained, and mentoring that grows engineers into senior roles.",
         chipsTitle: "Practices:",
         labels: [
             "Technical Strategy", "Architecture Specs", "Code Review", "Mentoring",

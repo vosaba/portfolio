@@ -35,6 +35,17 @@
     color: white;
 }
 
+@media only screen and (min-width: 1170px) {
+    #history .vertical-timeline {
+        width: 100%;
+        max-width: none;
+    }
+
+    #history .vertical-timeline--two-columns .vertical-timeline-element-content {
+        width: 46%;
+    }
+}
+
 .vertical-timeline-element .timeline-client {
     margin-top: 0.2em;
     font-weight: 700;

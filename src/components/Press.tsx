@@ -71,11 +71,13 @@ const Press: React.FC = () => {
                             <blockquote className="info-card-quote">“{item.quote}”</blockquote>
                         )}
                         <p className="info-card-text">{item.description}</p>
-                        <a className="info-card-link" href={item.link} target="_blank" rel="noreferrer">
-                            {item.kind === 'Product launch' ? 'Read the announcement' : 'Read the interview'}
-                            <OpenInNewIcon/>
-                        </a>
-                        {item.note && <span className="info-card-note">{item.note}</span>}
+                        <div className="info-card-footer">
+                            <a className="info-card-link" href={item.link} target="_blank" rel="noreferrer">
+                                {item.kind === 'Product launch' ? 'Read the announcement' : 'Read the interview'}
+                                <OpenInNewIcon/>
+                            </a>
+                            {item.note && <span className="info-card-note">{item.note}</span>}
+                        </div>
                     </article>
                 ))}
             </div>
