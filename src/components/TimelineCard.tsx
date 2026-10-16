@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
+import Chip from '@mui/material/Chip';
 import 'react-vertical-timeline-component/style.min.css';
 
 const SubtitleRow = ({ title, subtitle, link }: { title: string, subtitle: string, link?: string }) => (
@@ -34,20 +35,26 @@ const SubtitleRow = ({ title, subtitle, link }: { title: string, subtitle: strin
 interface TimelineCardProps {
     date: string;
     company: string;
+    client?: string;
     location: string;
     link?: string;
     title: string;
-    description: string;
+    summary?: string;
+    highlights: string[];
+    tags?: string[];
     icon: IconProp;
 }
 
 const TimelineCard: React.FC<TimelineCardProps> = ({
     date,
     company,
+    client,
     location,
     link,
     title,
-    description,
+    summary,
+    highlights,
+    tags = [],
     icon,
 }) => {
     return (
@@ -60,7 +67,20 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
         >
             <SubtitleRow title={company} subtitle={location} link={link} />
             <h3 className="vertical-timeline-element-title">{title}</h3>
-            <p>{description}</p>
+            {client && <p className="timeline-client">Client: {client}</p>}
+            {summary && <p className="timeline-summary">{summary}</p>}
+            <ul className="timeline-highlights">
+                {highlights.map((highlight) => (
+                    <li key={highlight}>{highlight}</li>
+                ))}
+            </ul>
+            {tags.length > 0 && (
+                <div className="timeline-tags">
+                    {tags.map((tag) => (
+                        <Chip key={tag} className="chip" label={tag} size="small" />
+                    ))}
+                </div>
+            )}
         </VerticalTimelineElement>
     );
 };

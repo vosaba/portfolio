@@ -4,11 +4,39 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#f8f9fa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0d1116" media="(prefers-color-scheme: dark)" />
+    <style>
+      html, body { background-color: #0d1116; }
+      @media (prefers-color-scheme: light) {
+        html, body { background-color: #f8f9fa; }
+      }
+    </style>
     <meta
       name="description"
-      content="My personal portfolio website."
+      content="Leonid Abasov, Principal Software Engineer: distributed systems, platform architecture, AI in production and enterprise integrations on .NET, TypeScript, AWS, Azure and Kubernetes."
     />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://leonidabasov.com/" />
+    <meta property="og:title" content="Leonid Abasov | Principal Software Engineer" />
+    <meta
+      property="og:description"
+      content="Distributed systems, platform architecture, AI in production and enterprise integrations. 12+ years building systems used by ExxonMobil, Shell and BP, U.S. Department of Energy programs, and millions of Namecheap customers."
+    />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/8919888?v=4" />
+    <meta name="twitter:card" content="summary" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Leonid Abasov",
+        "jobTitle": "Principal Software Engineer",
+        "url": "https://leonidabasov.com",
+        "sameAs": ["https://www.linkedin.com/in/vosaba/", "https://github.com/vosaba"],
+        "address": { "@type": "PostalAddress", "addressLocality": "Raleigh", "addressRegion": "NC", "addressCountry": "US" }
+      }
+    </script>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -24,7 +52,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Leonid Abasov</title>
+    <title>Leonid Abasov | Principal Software Engineer</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

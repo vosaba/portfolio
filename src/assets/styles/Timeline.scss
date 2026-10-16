@@ -35,6 +35,48 @@
     color: white;
 }
 
+.vertical-timeline-element .timeline-client {
+    margin-top: 0.2em;
+    font-weight: 700;
+    color: rgb(80, 0, 202);
+}
+
+.vertical-timeline-element .timeline-summary {
+    font-style: italic;
+    color: #4a5361;
+}
+
+.timeline-highlights {
+    margin: 0.8em 0 0;
+    padding-left: 1.1em;
+
+    li {
+        margin-bottom: 0.4em;
+        font-family: "Lato", sans-serif;
+        font-size: 0.95em;
+        line-height: 1.55;
+        color: rgb(39, 40, 34);
+    }
+
+    li::marker {
+        color: rgb(80, 0, 202);
+    }
+}
+
+.timeline-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+
+    .chip {
+        background-color: #eef0f4 !important;
+        height: 22px !important;
+        font-size: 0.75rem !important;
+        box-shadow: none !important;
+    }
+}
+
 @media screen and (max-width: 1170px) {
     .vertical-timeline-element .vertical-timeline-element-date {
         color: rgb(39, 40, 34);

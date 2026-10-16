@@ -19,6 +19,22 @@
     text-decoration: underline;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
+
+.main-container .project .project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    margin-top: 12px;
+
+    a {
+        font-weight: 700;
+        color: var(--accent-text);
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
   
 .zoom {
     border-radius: 5px;

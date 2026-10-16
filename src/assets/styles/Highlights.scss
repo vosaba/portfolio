@@ -1,0 +1,80 @@
+.highlights {
+    padding: 4% 10% 0;
+}
+
+.highlights-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.main-container {
+    --tile-strip: linear-gradient(90deg, #dc05e7 0%, #ba0dd5 25%, #9017bf 45%, #811bb9 62%, #5824a3 85%, #402a97 100%);
+}
+
+.main-container.light-mode {
+    --tile-strip: #d0d0d4;
+}
+
+.highlight {
+    position: relative;
+    overflow: hidden;
+    padding: 25px 24px 22px;
+    border-radius: 10px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-top: 0;
+    box-shadow: var(--card-shadow);
+}
+
+.highlight::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--tile-strip);
+    background-attachment: fixed;
+}
+
+.highlight-value {
+    display: block;
+    font-family: "Lato", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--text);
+}
+
+.highlight-label {
+    display: block;
+    margin-top: 6px;
+    font-family: "Lato", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: var(--text-muted);
+}
+
+@media screen {
+    @media (max-width: 900px) {
+        .highlights-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .highlights {
+            padding: 8% 5% 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .highlights-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}

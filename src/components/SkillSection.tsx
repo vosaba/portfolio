@@ -10,18 +10,20 @@ interface SkillSectionProps {
     title: string;
     description: string;
     labels: string[];
+    chipsTitle?: string;
+    wide?: boolean;
 }
 
-const SkillSection: React.FC<SkillSectionProps> = ({ icon, title, description, labels }) => {
+const SkillSection: React.FC<SkillSectionProps> = ({ icon, title, description, labels, chipsTitle = 'Tech stack:', wide = false }) => {
     return (
-        <div className="skill">
+        <div className={`skill${wide ? ' skill-wide' : ''}`}>
             <FontAwesomeIcon icon={icon} size="3x" />
             <h3>{title}</h3>
             <p>{description}</p>
             <div className="flex-chips">
-                <span className="chip-title">Tech stack:</span>
-                {labels.map((label, index) => (
-                    <Chip key={index} className="chip" label={label} />
+                <span className="chip-title">{chipsTitle}</span>
+                {labels.map((label) => (
+                    <Chip key={label} className="chip" label={label} />
                 ))}
             </div>
         </div>

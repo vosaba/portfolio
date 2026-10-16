@@ -62,8 +62,8 @@ import React, {
             <ChildTag
               className={props.childClassName}
               style={{
-                transition: `opacity ${transitionDuration}ms, transform ${transitionDuration}ms`,
-                transform: maxIsVisible > i ? "none" : "translateY(20px)",
+                // Opacity only: sliding (transform or offset) makes the hero's fixed background jump after load.
+                transition: `opacity ${transitionDuration}ms`,
                 opacity: maxIsVisible > i ? 1 : 0,
               }}
             >

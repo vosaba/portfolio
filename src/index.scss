@@ -17,6 +17,26 @@ code {
   position: relative;
   background-color: #0d1116;
 
+  --text: #ffffff;
+  --text-muted: #a9b1bd;
+  --accent: #5000ca;
+  --accent-text: #b08cff;
+  --card-bg: rgba(255, 255, 255, 0.04);
+  --card-border: rgba(255, 255, 255, 0.12);
+  --card-shadow: none;
+}
+
+.main-container.light-mode {
+  --text: #0d1116;
+  --text-muted: #4a5361;
+  --accent-text: #5000ca;
+  --card-bg: #ffffff;
+  --card-border: rgba(13, 17, 22, 0.08);
+  --card-shadow: 0px 2px 6px rgba(13, 17, 22, 0.08);
+}
+
+.dark-mode a:hover {
+  color: #b08cff;
 }
 
 a {

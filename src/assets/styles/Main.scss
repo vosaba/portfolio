@@ -1,5 +1,8 @@
 .dark-mode .about-section {
     background-color: rgba(0, 0, 0, 0.2);
+    // Sized so the ribbon sits under the 64px nav and its tail tip hides below the 700px hero.
+    background-size: auto 960px;
+    background-position: right top -39px;
 }
 
 .about-section {
@@ -46,6 +49,27 @@
         font-size: 5em;
         margin-block-start: 0px;
         margin-block-end: 0px;
+    }
+
+    .tagline {
+        font-size: 1.1em;
+        line-height: 1.6;
+        max-width: 640px;
+        margin-block-start: 16px;
+        opacity: 0.9;
+    }
+
+    .location {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 1em;
+        margin-block-start: 12px;
+        opacity: 0.8;
+
+        svg {
+            font-size: 1.1em;
+        }
     }
 }
 
